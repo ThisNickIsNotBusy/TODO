@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header_block">
+                <div class="logo_h1_block">
+                    <img class = "logo_header" src="images/icons8-reminders-48.png">
+                    <h1>Simple ToDo</h1>
+                </div>
+
+                <div class="tool_data_block">
+                    <div class="data_header">
+                        <span class="date"></span>
+                    </div>
+                    <a href="#" class="link_tool"><img class="tool_header" src="images/tools40.png"></a>
+                </div>
+            </div>
+        </header>
+        <!---Aside--->
+        <aside>  
+            <div class="aside_block">
+                <!-- <img class="user_photo" src="images/acc48.png"> -->
+                <h3><span class = "name"><span></h3>
+            </div>
+
+            <button id="add_list">
+                <img src="images/plus20.png">
+            </button>
+
+            <div id="aside_block_lists" class="aside_block_lists11"></div>
+        </aside>
+        <!---Main--->
+        <main>
+            <div class="main_list">
+                <p class="intro">Привет, это TODO-лист. Нажимай на синию кнопку слева, создавай списки и наполняй их своими задачами :)</p>
+            </div>
+
+        </main>
+    </div>
+    <script>
+        function clockTick() {
+        let currentTime = new Date().toLocaleString();
+        dateBlock.innerHTML = currentTime;
+        }
+        setInterval(clockTick, 1000);
+    </script>
+    <script defer src="js/script.js"></script>
+</body>
+</html>
