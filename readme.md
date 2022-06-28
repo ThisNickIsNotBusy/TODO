@@ -1,3 +1,3 @@
 # TODO
 
-This is TODO my first pet-project on JavaScript, HTML, CSS
+This is "TODO" my first project on JavaScript, HTML, CSS
